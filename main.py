@@ -6,7 +6,7 @@ import win32api, win32con
 import urllib.request
 from pynput.mouse import Button, Controller
 
-url = "http://192.168.42.129:8080/shot.jpg"
+url = "http://100.73.6.196:8080/shot.jpg"
 
 """ cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
@@ -45,13 +45,13 @@ while True:
     frameRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
     cv2.rectangle(frame, (10, 10), (20, 20), (0, 0, 255), -1)
-    cv2.putText(frame, "Double Click", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
+    cv2.putText(frame, "Scroll Down", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
 
     cv2.rectangle(frame, (200, 10), (210, 20), (0, 255, 0), -1)
     cv2.putText(frame, "Click", (220, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 1)
 
     cv2.rectangle(frame, (300, 10), (310, 20), (0, 255, 255), -1)
-    cv2.putText(frame, "Scroll Down", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 1)
+    cv2.putText(frame, "Double Click", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 1)
 
     cv2.rectangle(frame, (490, 10), (500, 20), (255, 255, 255), 1)
     cv2.putText(frame, "Cursor", (510, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255, 255, 255), 1)
@@ -119,16 +119,16 @@ while True:
                         scroll_down_flag = 0
                         cv2.putText(frame, "Click", (220, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 2)
                         mouse.click(Button.left, 1)
-                    elif dist_thumb_pinky > 0 and dist_thumb_pinky < 15:
+                    elif dist_thumb_mid > 0 and dist_thumb_mid < 15:
                         if db_click_flag == 0:
                             db_click_flag = 1
-                            cv2.putText(frame, "Double Click", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 2)
+                            cv2.putText(frame, "Scroll Down", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 2)
                             mouse.click(Button.left, 2)
-                    elif dist_thumb_mid > 0 and dist_thumb_mid < 15:
+                    elif dist_thumb_pinky > 0 and dist_thumb_pinky < 15:
                         if scroll_down_flag == 0:
                             db_click_flag = 0
                             scroll_down_flag = 1
-                            cv2.putText(frame, "Scroll Down", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 2)
+                            cv2.putText(frame, "Double Click", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 2)
                             mouse.scroll(0, -2)
                         
 
@@ -140,7 +140,7 @@ while True:
     
 
     cv2.imshow("frame", frame)
-    if cv2.waitKey(1) == 27:
+    if cv2.waitKey(1) == ord('q'):
         break
 
 cv2.destroyAllWindows()
