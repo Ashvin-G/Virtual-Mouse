@@ -28,7 +28,9 @@ mouseOldLoc = np.array([0, 0])
 mouseLoc = np.array([0, 0])
 dampingFactor = 2
 
-pressFlag = 0
+db_click_flag = 0
+scroll_down_flag = 0
+click_flag = 0
 
 while True:
     mouse.release(Button.left)
@@ -42,11 +44,17 @@ while True:
     
     frameRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-    cv2.rectangle(frame, (10, 10), (20, 20), (0, 255, 0), -1)
-    cv2.putText(frame, "Double Click", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 1)
+    cv2.rectangle(frame, (10, 10), (20, 20), (0, 0, 255), -1)
+    cv2.putText(frame, "Double Click", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
 
-    cv2.rectangle(frame, (200, 10), (210, 20), (0, 0, 255), -1)
-    cv2.putText(frame, "Click", (220, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
+    cv2.rectangle(frame, (200, 10), (210, 20), (0, 255, 0), -1)
+    cv2.putText(frame, "Click", (220, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 1)
+
+    cv2.rectangle(frame, (300, 10), (310, 20), (0, 255, 255), -1)
+    cv2.putText(frame, "Scroll Down", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 1)
+
+    cv2.rectangle(frame, (490, 10), (500, 20), (255, 255, 255), 1)
+    cv2.putText(frame, "Cursor", (510, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255, 255, 255), 1)
 
 
     results = hands.process(frameRGB)
@@ -63,13 +71,16 @@ while True:
                         index_cx, index_cy = int(lm.x * w), int(lm.y * h)
                     if id == 20:
                         pinky_cx, pinky_cy = int(lm.x * w), int(lm.y * h)
-                    if id == 13:
-                        ring_end_cx, ring_end_cy = int(lm.x * w), int(lm.y * h)
+                    if id == 12:
+                        mid_tip_cx, mid_tip_cy = int(lm.x * w), int(lm.y * h)
+                    
 
-
-                    cv2.circle(frame, (index_cx, index_cy), 2, (0, 0, 255), -1)
-                    cv2.circle(frame, (pinky_cx, pinky_cy), 2, (0, 255, 0), -1)
-                    cv2.circle(frame, (ring_end_cx, ring_end_cy), 2, (255, 0, 0), -1)
+                    
+                    cv2.circle(frame, (index_cx, index_cy), 5, (0, 255, 0), -1)
+                    cv2.circle(frame, (mid_tip_cx, mid_tip_cy), 5, (0, 255, 255), -1)
+                    cv2.circle(frame, (pinky_cx, pinky_cy), 5, (0, 0, 255), -1)
+                    
+                    
 
 
                     
@@ -80,27 +91,20 @@ while True:
                     center_thumb_pinky_x = int((thumb_cx + pinky_cx)/2)
                     center_thumb_pinky_y = int((thumb_cy + pinky_cy)/2)
 
-                    center_thumb_ring_end_x = int((thumb_cx + ring_end_cx)/2)
-                    center_thumb_ring_end_y = int((thumb_cy + ring_end_cy)/2)
+                    center_thumb_mid_tip_x = int((thumb_cx + mid_tip_cx)/2)
+                    center_thumb_mid_tip_y = int((thumb_cy + mid_tip_cy)/2)
+
                     
+                    cv2.circle(frame, (center_thumb_index_x, center_thumb_index_y), 4, (255, 255, 255), 1)
 
 
 
 
                     dist_thumb_index = sqrt((thumb_cx - index_cx)**2 + (thumb_cy - index_cy)**2)
-                    dist_thumb_mid = sqrt((thumb_cx - pinky_cx)**2 + (thumb_cy - pinky_cy)**2)
-                    dist_thumb_ring_end = sqrt((thumb_cx - ring_end_cx)**2 + (thumb_cy - ring_end_cy)**2)
-
-                    if dist_thumb_index < 30 and dist_thumb_index > 0:
-                        print("Click")
-                    elif dist_thumb_mid < 30 and dist_thumb_mid > 0:
-                        print("Double Click")
-                    elif dist_thumb_ring_end < 30 and dist_thumb_ring_end > 0:
-                        print("Scroll Down")
-
-
-
-                    mouseLoc = mouseOldLoc + ((center_x, center_y) - mouseOldLoc)/dampingFactor
+                    dist_thumb_pinky = sqrt((thumb_cx - pinky_cx)**2 + (thumb_cy - pinky_cy)**2)
+                    dist_thumb_mid = sqrt((thumb_cx - mid_tip_cx)**2 + (thumb_cy - mid_tip_cy)**2)
+                    
+                    mouseLoc = mouseOldLoc + ((center_thumb_index_x, center_thumb_index_y) - mouseOldLoc)/dampingFactor
 
 
                     mouse_x = int((mouseLoc[0] * screen_width / 600))
@@ -110,24 +114,23 @@ while True:
                     mouseOldLoc = mouseLoc
 
                     
-
-
-                    """ if dist < 30 and dist > 0:
-                        if pressFlag == 0:
+                    if dist_thumb_index > 0 and dist_thumb_index < 15:
+                        db_click_flag = 0
+                        scroll_down_flag = 0
+                        cv2.putText(frame, "Click", (220, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 2)
+                        mouse.click(Button.left, 1)
+                    elif dist_thumb_pinky > 0 and dist_thumb_pinky < 15:
+                        if db_click_flag == 0:
+                            db_click_flag = 1
+                            cv2.putText(frame, "Double Click", (30, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 2)
                             mouse.click(Button.left, 2)
-                            cv2.putText(frame, "Double Click", (20, 20), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 1)
-                            pressFlag = 1
-
-                    elif dist > 30:
-                        pressFlag = 0 """
-                    
-                    
+                    elif dist_thumb_mid > 0 and dist_thumb_mid < 15:
+                        if scroll_down_flag == 0:
+                            db_click_flag = 0
+                            scroll_down_flag = 1
+                            cv2.putText(frame, "Scroll Down", (320, 22), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 255), 2)
+                            mouse.scroll(0, -2)
                         
-                    
-
-                    
-                    
-                    
 
                 except:
                     pass
