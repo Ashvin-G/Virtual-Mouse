@@ -71,7 +71,7 @@ Step 5: Run the python script.
 
 ## Controls
 <img src="images/control.png" width="250" height="300">
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+🔴 Scroll Down
 
 
 
