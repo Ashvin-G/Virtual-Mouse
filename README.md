@@ -70,7 +70,7 @@ Step 5: Run the python script.
 
 
 ## Controls
-<img src="images/control.png" width="690" height="460" align="right" alt="Designed by macrovector_official / Freepik">
+<img src="images/control.png" width="100" height="200" align="right" alt="Designed by macrovector_official / Freepik">
 
 
 
