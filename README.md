@@ -41,8 +41,13 @@ $ pip install mediapipe
 ## Features
 | Features  | Availability |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Click  | :heavy_check_mark:  |
+| Double Click  | :heavy_check_mark:  |
+| Scroll Down  | :heavy_check_mark:  |
+| Scroll Up  | :heavy_check_mark:  |
+| Hold and Drag  | :x: |
+| Scroll Left  | :x:  |
+| Scroll Right | :x:  |
 
 
 
