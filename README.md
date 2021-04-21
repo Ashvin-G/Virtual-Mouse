@@ -23,4 +23,11 @@ The program was completely written using Python 3.7.0 in association with severa
 
 ### Python
 #### Step 1:
-Navigate to [![Official Python Website](https://www.python.org/downloads/release/python-370/)
+Navigate to [Official Python Website](https://www.python.org/downloads/release/python-370/)
+#### Step 2:
+In the Files section select and download the appropriate version based on your Operating System.
+#### Step 3:
+Run the Python Installer once downloaded. Ensure that you have selected the Install launcher for all users and Add Python 3.7 to PATH checkboxes. Futher, click Install Now.
+#### Step 4:
+Verify Python was installed by typing python in command prompt and Python interpreter should be running.
+
