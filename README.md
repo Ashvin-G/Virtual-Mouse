@@ -84,6 +84,6 @@ Step 5: Run the python script.
 | Scroll Left  | :x:  |
 | Scroll Right | :x:  |
 
-
+:star: Star me on GitHub — it motivates me a lot!
 
 
