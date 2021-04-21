@@ -59,6 +59,7 @@ For example
 ```
 url = http://100.73.6.196:8080/shot.jpg
 ```
+Step 5: Run the python script.
 
 
 
