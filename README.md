@@ -36,8 +36,8 @@ $ pip install numpy
 $ pip install mediapipe
 ```
 ### IP Webcam
-IP Webcam(Developed By: Pavel Khlebovich) available freely at Play Store.
 <img src="images/Webcam.JPG" width="100" height="100"  alt="IP Webcam">
+<p>IP Webcam(Developed By: Pavel Khlebovich) available freely at Play Store.</p>
 
 ## Features
 | Features  | Availability |
