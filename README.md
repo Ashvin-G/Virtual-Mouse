@@ -11,6 +11,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
     - [Pynput](#Pynput)
     - [IP Webcam](#IP-Webcam)
 - [How To Use](#How-To-Use)
+- [Controls](#Controls)
 - [Features](#Features)
 
   
@@ -68,7 +69,8 @@ url = http://100.73.6.196:8080/shot.jpg
 Step 5: Run the python script.
 
 
-
+## Controls
+<img src="images/control.png" width="690" height="460" align="right" alt="Designed by macrovector_official / Freepik">
 
 
 
