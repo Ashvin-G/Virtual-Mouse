@@ -6,7 +6,7 @@ import win32api, win32con
 import urllib.request
 from pynput.mouse import Button, Controller
 
-url = "http://100.73.6.196:8080/shot.jpg"
+url = "Enter your URL here/shot.jpg"
 
 """ cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
