@@ -4,11 +4,16 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
 
 ## Table of content
 - [Prerequisite](#Prerequisite)
-    - [Python](#tpython)
-    - [OpenCV](#opencv)
-    - [numpy](#numpy)
-    - [Mediapipe](#mediapipe)
-    - [IP Camera](#IPCamera)
+- [Installation](#Installation)
+    - [Python](#Python)
+    - [OpenCV](#OpenCV)
+        - [OpenCV without GPU Supprot](#OpenCV without GPU Supprot)
+        - [OpenCV with GPU Supprot](#OpenCV with GPU Supprot)
+    - [Numpy](#Numpy)
+    - [MediaPipe](#MediaPipe)
+    - [IP Camera](#IP Camera)
+       
+   
 
 
 ## Prerequisite
