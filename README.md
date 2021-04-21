@@ -1,2 +1,2 @@
 # Virtual Mouse
-<img src="images/logo.jpg" width="40%">
+<img src="images/logo.jpg" width="120" height="178" align="right">
