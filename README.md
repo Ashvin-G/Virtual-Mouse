@@ -8,6 +8,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
     - [OpenCV](#OpenCV)
     - [Numpy](#Numpy)
     - [MediaPipe](#MediaPipe)
+    - [Pynput](#Pynput)
     - [IP Webcam](#IP-Webcam)
 - [How To Use](#How-To-Use)
 - [Features](#Features)
@@ -36,6 +37,10 @@ $ pip install numpy
 ### MediaPipe
 ```
 $ pip install mediapipe
+```
+### Pynput
+```
+$ pip install pynput
 ```
 ### IP Webcam
 <img src="images/Webcam.JPG" width="100" height="100"  alt="IP Webcam">
