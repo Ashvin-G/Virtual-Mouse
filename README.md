@@ -71,6 +71,7 @@ Step 5: Run the python script.
 
 ## Controls
 <img src="images/control.png" width="250" height="300">
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `Scroll Down`
 
 
 
