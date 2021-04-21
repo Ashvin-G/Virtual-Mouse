@@ -8,7 +8,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
     - [OpenCV](#OpenCV)
     - [Numpy](#Numpy)
     - [MediaPipe](#MediaPipe)
-    - [IP Camera](#IP-Camera)
+    - [IP Webcam](#IP-Webcam)
        
    
 
