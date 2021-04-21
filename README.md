@@ -36,7 +36,7 @@ $ pip install numpy
 $ pip install mediapipe
 ```
 ### IP Webcam
-<img src="images/Webcam.JPG" width="700" height="178"  alt="IP Webcam">
+<img src="images/Webcam.JPG" width="100" height="100"  alt="IP Webcam">
 
 ## Features
 | Features  | Availability |
