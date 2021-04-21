@@ -54,7 +54,7 @@ Step 4: Edit main.py and replace<br>
 ```
 url = "Enter your URL here/shot.jpg"
 ```
-with your IPv4 address./
+with your IPv4 address.<br>
 For example
 ```
 url = http://100.73.6.196:8080/shot.jpg
