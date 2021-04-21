@@ -12,4 +12,5 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
 
 
 ## Prerequisite
-The program was completely written using Python 3.7.0 in association with several other libraries such as OpenCV and Numpy for image processing, Google's MediaPipe library for human hand pose estimation. This program also utilizes IP Camera Android Application for image acquisition.
+The program was completely written using Python 3.7.0 in association with several other libraries such as OpenCV and Numpy for image processing, Google's MediaPipe library for human hand pose estimation. This program also utilizes IP Camera Android Application for image acquisition which is freely availabale on Play Store.
+> **_NOTE:_**  If the resolution and quality of builtin Webcam is good enough then there is no necessity of IP Camera Application
