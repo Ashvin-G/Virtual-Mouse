@@ -75,7 +75,8 @@ Step 5: Run the python script.
 🟣 Scroll Up
 🟡 Double Click
 🟢 Click
-⚪ Mouse Position
+⚪ Mouse Position<br>
+The ⚪ will help in moving the cursor. To perform any Mouse operation move your thumb to corresponding finger tips.
 
 
 
