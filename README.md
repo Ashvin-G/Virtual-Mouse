@@ -70,7 +70,7 @@ Step 5: Run the python script.
 
 
 ## Controls
-<img src="images/control.png" width="100" height="200">
+<img src="images/control.png" width="250" height="300">
 
 
 
