@@ -1,2 +1,2 @@
 # Virtual Mouse
-![alt text](images/logo.jpg = 100x100)
+![alt text](images/logo.jpg |width=100)
