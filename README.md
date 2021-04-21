@@ -72,6 +72,11 @@ Step 5: Run the python script.
 ## Controls
 <img src="images/control.png" width="250" height="300">
 🔴 Scroll Down
+🟣 Scroll Up
+🟡 Double Click
+🟢 Click
+⚪ Mouse Position
+
 
 
 
