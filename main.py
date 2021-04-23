@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import mediapipe as mp
 from math import sqrt
-import win32api, win32con
 import urllib.request
 from pynput.mouse import Button, Controller
 
