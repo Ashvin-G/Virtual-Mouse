@@ -28,19 +28,22 @@ The program was completely written using Python 3.7.0 in association with severa
 ## Installation
 > **_NOTE:_**  Ensure that pip is properly installed and Python 3.7 is added to PATH
 ### OpenCV
-The program was written without CUDA GPU support.
+This library is used for Image Processing and image acquisition.
 ```
 $ pip install opencv-python
 ```
 ### Numpy
+Numpy is neccessary not only because it is dependencies of OpenCV but it is also used in image aquisition from IP Webcam and decode it into suitable format for further image processing operations.
 ```
 $ pip install numpy
 ```
 ### MediaPipe
+The sole purpose of MediaPipe is to detect palm and it's associated 20 landmarks on palm.
 ```
 $ pip install mediapipe
 ```
 ### Pynput
+Pynput is used to simulate mouse operations.
 ```
 $ pip install pynput
 ```
