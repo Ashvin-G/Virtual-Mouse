@@ -48,7 +48,7 @@ $ pip install pynput
 <img src="images/Webcam.JPG" width="100" height="100"  alt="IP Webcam">
 <p>IP Webcam(Developed By: Pavel Khlebovich) available freely at Play Store.</p>
 
-## How To Use
+## How To Use Non GUI
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 ```bash
 # Clone this repository
