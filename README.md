@@ -10,8 +10,9 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
     - [MediaPipe](#MediaPipe)
     - [Pynput](#Pynput)
     - [IP Webcam](#IP-Webcam)
-- [How To Use](#How-To-Use)
+- [How To Use Non GUI](#How-To-Use)
 - [Controls](#Controls)
+- [GUI Design](#GUI-Design)
 - [Features](#Features)
 
   
@@ -78,7 +79,8 @@ Step 5: Run the python script.
 ⚪ Mouse Position<br>
 The ⚪ will help in moving the cursor. To perform any Mouse operation move your thumb to corresponding finger tips.
 
-
+## GUI Design
+<img src="images/GUI_Design.JPG" width="600" height="300">
 
 
 
