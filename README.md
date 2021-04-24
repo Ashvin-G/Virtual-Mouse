@@ -104,9 +104,9 @@ The ⚪ will help in moving the cursor. To perform any Mouse operation move your
 | Scroll Right | :x:  |
 
 ## References
-[MediaPipe](https://google.github.io/mediapipe/solutions/hands.html)
-[Mouse Simulation using Pynput](https://pythonhosted.org/pynput/mouse.html)
-[How Build and Install OpenCV with CUDA GPU Support](https://www.youtube.com/watch?v=YsmhKar8oOc)
+[How to use Google's MediaPipe](https://google.github.io/mediapipe/solutions/hands.html)<br>
+[Mouse Simulation using Pynput](https://pythonhosted.org/pynput/mouse.html)<br>
+[How Build and Install OpenCV with CUDA GPU Support](https://www.youtube.com/watch?v=YsmhKar8oOc)<br>
 
 
 
