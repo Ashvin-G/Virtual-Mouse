@@ -14,6 +14,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
 - [Controls](#Controls)
 - [GUI Design](#GUI-Design)
 - [Features](#Features)
+- [References](#References)
 
   
        
@@ -29,6 +30,7 @@ The program was completely written using Python 3.7.0 in association with severa
 > **_NOTE:_**  Ensure that pip is properly installed and Python 3.7 is added to PATH
 ### OpenCV
 This library is used for Image Processing and image acquisition.
+> **_NOTE:_**  This application was developed without using OpenCV with CUDA GPU Support.
 ```
 $ pip install opencv-python
 ```
@@ -100,6 +102,14 @@ The ⚪ will help in moving the cursor. To perform any Mouse operation move your
 | Hold and Drag  | :x: |
 | Scroll Left  | :x:  |
 | Scroll Right | :x:  |
+
+## References
+[MediaPipe](https://google.github.io/mediapipe/solutions/hands.html)
+[Mouse Simulation using Pynput](https://pythonhosted.org/pynput/mouse.html)
+[How Build and Install OpenCV with CUDA GPU Support](https://www.youtube.com/watch?v=YsmhKar8oOc)
+
+
+
 
 :star: Star me on GitHub — it motivates me a lot!
 
