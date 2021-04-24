@@ -80,10 +80,11 @@ Step 5: Run the python script.
 The ⚪ will help in moving the cursor. To perform any Mouse operation move your thumb to corresponding finger tips.
 
 ## GUI Design
-<img src="images/GUI_Design.JPG" width="600" height="300">
 <p> This is the landing window</p>
-<img src="images/help.jpg" width="600" height="300">
+<img src="images/GUI_Design.JPG" width="600" height="300">
 <p> This is the help window</p>
+<img src="images/help.jpg" width="600" height="300">
+
 
 
 ## Features
