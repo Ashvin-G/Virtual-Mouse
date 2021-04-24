@@ -10,7 +10,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
     - [MediaPipe](#MediaPipe)
     - [Pynput](#Pynput)
     - [IP Webcam](#IP-Webcam)
-- [How To Use Non GUI](#How-To-Use-Non GUI)
+- [How To Use Non GUI](#How-To-Use-Non-GUI)
 - [Controls](#Controls)
 - [GUI Design](#GUI-Design)
 - [Features](#Features)
