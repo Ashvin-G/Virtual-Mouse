@@ -13,6 +13,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
 - [How To Use Non GUI](#How-To-Use-Non-GUI)
 - [Controls](#Controls)
 - [GUI Design](#GUI-Design)
+- [Demo](#Demo)
 - [Features](#Features)
 - [References](#References)
 
@@ -91,7 +92,8 @@ The ⚪ will help in moving the cursor. To perform any Mouse operation move your
 <p> This is the help window</p>
 <img src="images/help.jpg" width="600" height="300">
 
-
+## Demo
+<img src="images/demo.gif" width="600" height="300">
 
 ## Features
 | Features  | Availability |
