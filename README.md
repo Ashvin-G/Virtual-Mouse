@@ -41,6 +41,7 @@ $ pip install numpy
 ```
 ### MediaPipe
 The sole purpose of MediaPipe is to detect palm and it's associated 20 landmarks on palm.
+<img src="./images/hand_landmarks.png" width=600 height=300>
 ```
 $ pip install mediapipe
 ```
