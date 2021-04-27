@@ -15,6 +15,7 @@ Virtual Mouse is a program that enables user to simulate Mouse operations such a
 - [GUI Design](#GUI-Design)
 - [Demo](#Demo)
 - [Features](#Features)
+- [Acknowledgement](#Acknowledgement)
 - [References](#References)
 
   
@@ -105,6 +106,11 @@ The ⚪ will help in moving the cursor. To perform any Mouse operation move your
 | Hold and Drag  | :x: |
 | Scroll Left  | :x:  |
 | Scroll Right | :x:  |
+
+
+## Acknowledgement
+The Logo is from [www.freepik.com]("http://www.freepik.com") Designed By: macrovector_official / Freepik 
+
 
 ## References
 [How to use Google's MediaPipe](https://google.github.io/mediapipe/solutions/hands.html)<br>
