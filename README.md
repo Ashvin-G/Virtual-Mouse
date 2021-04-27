@@ -109,7 +109,7 @@ The ⚪ will help in moving the cursor. To perform any Mouse operation move your
 
 
 ## Acknowledgement
-The Logo is from [www.freepik.com](http://www.freepik.com) Designed By: macrovector_official / Freepik 
+The Logo is from [www.freepik.com](http://www.freepik.com).<br> Designed By: macrovector_official / Freepik 
 
 
 ## References
